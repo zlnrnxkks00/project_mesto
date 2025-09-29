@@ -1,7 +1,10 @@
+/*[TODO №5]: Никогда не задаем body и большим контейнерам фиксированную высоту
+Высота формируется самостоятельно - за счет контента и padding/margin.
+Обычно фиксированную высоту мы используем только в кнопках, картинках*/
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #000;
   color: #fff;
   width: 1280px;
@@ -54,7 +57,7 @@ body {
 
 /* Заголовок профиля (Имя) */
 .profile__title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 42px;
   line-height: 48px;
@@ -64,15 +67,14 @@ body {
 
 /* Подзаголовок профиля (Описание) */
 .profile__subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0;
   margin-top: 16px;
 }
-
-
+/* Аналогично пункту №2: */
 .profile__edit {
   position: absolute;
   right: 280px;
@@ -84,13 +86,15 @@ body {
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
-
 }
-
 .profile__edit:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
+/*[TODO №2]: Лишние свойства "url() no-repeat center"
+(эти свойства для работы с картинкой через url() - задаешь блоку фон)
+У тебя картинка идет через другой тег img*/
+/*Чтобы убрать серый фон (он идет у <button> по умолчанию) - надо написать background: transparent (прозрачный) */
 .profile__add {
   width: 150px;
   height: 50px;
@@ -102,8 +106,13 @@ body {
 }
 
 .profile__add:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
+
+/* [TODO №3]: Чтобы выровнять блок по центу всегда используй: margin: 40px auto, 
+или display: flex с justify-content:center. Всегда только эти 2 способа, так как
+они на всех устойствах и браузерах будут выглядеть правильно и
+ такой блок легче адаптировать*/
 
 /* Галерея */
 .gallery {
@@ -136,6 +145,9 @@ body {
   padding: 25px 20px 31px 21px;
 }
 
+/* [TODO №1]: Старайся не использовать margin и padding со значением -, 
+потому что очень часто такая верстка потом неправильно смотрится на разных устройствах*/
+/* Чтобы title и иконка лайка были на одном уровне - добавь заголовку line-height (почтай в документации)*/
 .card__title {
   font-size: 24px;
   font-weight: 900;
@@ -154,12 +166,12 @@ body {
 }
 
 .card__like:hover {
-    opacity: 0.6;;
+  opacity: 0.6;
 }
 
 .card__like.active {
-    background:black no-repeat center;
-    background-size: contain;
+  background: black no-repeat center;
+  background-size: contain;
 }
 
 /* затемнённый фон */
@@ -201,10 +213,9 @@ body {
   cursor: pointer;
 }
 
-
 /* заголовок */
 .popup__title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
@@ -225,7 +236,7 @@ body {
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #ccc;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   outline: none;
 }
@@ -241,7 +252,7 @@ body {
   background-color: #000;
   color: #fff;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -251,7 +262,6 @@ body {
 .popup__save:hover {
   background-color: #333;
 }
-
 
 /* Футер */
 .footer {
