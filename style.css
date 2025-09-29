@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  width: 1280px;
+  height: 1217px;
+  margin: 0 auto;
+}
+
+/* Хедер */
+.header {
+  width: 880px;
+  height: 74px;
+  margin: 45px 200px 0 200px;
+  border-bottom: 1px solid #545454;
+}
+
+.logo {
+  font-size: 33px;
+  font-weight: 700;
+  width: 142px;
+  height: 33px;
+}
+
+.logo span {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* Профиль */
+.profile {
+  width: 880px;
+  height: 120px;
+  margin: 40px 200px 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile__info {
+  margin-left: 30px;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* Заголовок профиля (Имя) */
+.profile__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* Подзаголовок профиля (Описание) */
+.profile__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-top: 16px;
+}
+
+
+.profile__edit {
+  position: absolute;
+  right: 280px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background: url() no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+}
+
+.profile__edit:hover {
+    opacity: 0.6;
+}
+
+.profile__add {
+  width: 150px;
+  height: 50px;
+  background: url() no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.profile__add:hover {
+    opacity: 0.6;
+}
+
+/* Галерея */
+.gallery {
+  width: 880px;
+  margin: 40px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  grid-gap: 20px 17px;
+}
+
+.card {
+  width: 282px;
+  height: 361px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 31px 21px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.card__like {
+  width: 22px;
+  height: 19px;
+  background: url(icons/like.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.card__like:hover {
+    opacity: 0.6;;
+}
+
+.card__like.active {
+    background:black no-repeat center;
+    background-size: contain;
+}
+
+/* затемнённый фон */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup_opened {
+  display: flex;
+}
+
+/* сама карточка */
+.popup__content {
+  width: 430px;
+  height: 330px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding: 34px 36px;
+  box-sizing: border-box;
+}
+
+/* кнопка закрыть */
+.popup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 32px;
+  height: 32px;
+  background: url(icons/Close_Icon.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* заголовок */
+.popup__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0 0 54px 0;
+  color: #000;
+}
+
+/* форма */
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* поля */
+.popup__input {
+  width: 358px;
+  height: 27px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.popup__input:last-of-type {
+  margin-bottom: 48px;
+}
+
+/* кнопка сохранить */
+.popup__save {
+  width: 358px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup__save:hover {
+  background-color: #333;
+}
+
+
+/* Футер */
+.footer {
+  margin: 60px 200px;
+  font-size: 14px;
+  color: #888;
+}

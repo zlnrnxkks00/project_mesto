@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, initial-scale=1.0">
+  <title>Project Mesto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- хедер -->
+<header class="header">
+  <img src="icons/logo.svg" alt="Логотип Mesto" class="logo">
+  <div class="header__line"></div>
+</header>
+
+
+
+  <!-- профиль -->
+  <section class="profile">
+    <img src="images/zlata avatar 1.png" alt="Аватар" class="profile__avatar">
+    <div class="profile__info">
+      <h1 class="profile__title">Злата Чумак</h1>
+      <p class="profile__subtitle">Исследователь</p>
+      <button class="profile__edit" aria-label="Редактировать">
+        <img src="icons/Edit_Button.svg" alt="edit button" srcset="">
+      </button>
+    </div>
+    <button class="profile__add">
+        <img src="icons/Add_Button.svg" alt="profile__add__button">
+    </button>
+  </section>
+
+  <!-- галерея -->
+  <section class="gallery">
+    <article class="card">
+      <img src="images/south demerdzhi.jpg" alt="южная Демерджи" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">ю. Демерджи</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/yalta.jpg" alt="Ялта" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">Ялта</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/sunny glade.JPG" alt="солнечная поляна" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">Солнечное</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/dobroe.JPG" alt="доброе" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">Доброе</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/bakhchisarai.JPG" alt="Бахчисарай" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">Бахчисарай</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/blue lake.JPG" alt="Голубое озеро" class="card__image">
+      <div class="card__content">
+        <h2 class="card__title">Голубое озеро</h2>
+        <button class="card__like"></button>
+      </div>
+    </article>
+  </section>
+
+  <!-- кнопка редактировать (иконка) -->
+<button class="profile__edit"></button>
+
+
+<!-- модальное окно -->
+<div class="popup popup_type_edit">
+  <div class="popup__content">
+    <button class="popup__close" type="button"></button>
+    <h2 class="popup__title">Редактировать профиль</h2>
+    <form class="popup__form">
+      <input
+        type="text"
+        name="name"
+        class="popup__input"
+        placeholder="Имя"
+        required
+      />
+      <input
+        type="text"
+        name="job"
+        class="popup__input"
+        placeholder="Профессия"
+        required
+      />
+      <button type="submit" class="popup__save">Сохранить</button>
+    </form>
+  </div>
+</div>
+
+
+
+  <!-- футер -->
+  <footer class="footer">
+    <p>© 2025 Russia</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
