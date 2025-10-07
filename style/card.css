@@ -4,9 +4,9 @@
   max-width: 880px;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 282px); /* фиксированная ширина карточки */
+  grid-template-columns: repeat(auto-fill, 282px);
   gap: 20px 17px;
-  justify-content: center; /* выравниваем сетку по центру */
+  justify-content: center;
 }
 
 
@@ -34,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px 20px 20px;
-  height: calc(361px - 282px); /* оставшееся место */
+  height: calc(361px - 282px);
   box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@
   font-size: 24px;
   font-weight: 900;
   margin: 0;
-  max-width: 200px; /* чтобы текст не съезжал на лайк */
+  max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

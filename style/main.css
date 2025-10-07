@@ -11,15 +11,15 @@ body {
   height: 100%;
 }
 
-/* Контейнер-контент */
+/* контейнер-контент */
 .content-wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 16px; /* чтобы на маленьких экранах был отступ */
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
-/* Хедер */
+/* хедер */
 .header {
   max-width: 880px;
   margin: 45px auto 0;

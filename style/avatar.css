@@ -1,4 +1,4 @@
-/* Профиль */
+/* профиль */
 .profile {
   max-width: 880px;
   width: 100%;
@@ -32,7 +32,7 @@
   margin-top: 10px;
 }
 
-/* Имя */
+/* имя */
 .profile__title {
   font-weight: 500;
   font-size: 42px;
@@ -40,7 +40,7 @@
   margin: 0;
 }
 
-/* Профессия */
+/* профессия */
 .profile__subtitle {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -54,7 +54,7 @@
   
 }
 
-/* Обёртка для имени и кнопки редактирования */
+/* обёртка для имени и кнопки редактирования */
 .profile__name-wrapper {
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@
   opacity: 0.6;
 }
 
-/* Адаптив для профиля */
+/* адаптив для профиля */
 @media (max-width: 679px) {
   .profile {
     flex-direction: column;
