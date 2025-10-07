@@ -1,0 +1,49 @@
+@import url("avatar.css");
+@import url("card.css");
+@import url("popup.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+}
+
+/* Контейнер-контент */
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px; /* чтобы на маленьких экранах был отступ */
+  box-sizing: border-box;
+}
+
+/* Хедер */
+.header {
+  max-width: 880px;
+  margin: 45px auto 0;
+  height: 74px;
+  border-bottom: 1px solid #545454;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 142px;
+  height: auto;
+  display: block;
+  margin-top: -50px;
+  margin-left: -15px;
+}
+
+.footer {
+  max-width: 880px;
+  margin: 60px auto;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #888;
+}

@@ -1,0 +1,99 @@
+/* затемнённый фон */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup_opened {
+  display: flex;
+}
+
+/* сама карточка */
+.popup__content {
+  width: 90%;
+  max-width: 430px;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding: 34px 36px;
+  box-sizing: border-box;
+}
+
+/* кнопка закрыть */
+.popup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 32px;
+  height: 32px;
+  background: url("../icons/Close_Icon.svg") no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+}
+
+/* заголовок */
+.popup__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0 0 30px 0;
+  color: #000;
+}
+
+/* форма */
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* поля */
+.popup__input {
+  width: 100%;
+  max-width: 358px;
+  height: 27px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.popup__input:hover {
+  border-bottom: 1px solid #000;
+}
+
+.popup__input:last-of-type {
+  margin-bottom: 48px;
+}
+
+/* кнопка сохранить */
+.popup__save {
+  width: 100%;
+  max-width: 358px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup__save:hover {
+  background-color: #333;
+}
+
+

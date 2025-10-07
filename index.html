@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280, initial-scale=1.0">
   <title>Project Mesto</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
   <!-- хедер -->
@@ -18,22 +18,24 @@
   <!-- профиль -->
   <section class="profile">
     <img src="images/zlata avatar 1.png" alt="Аватар" class="profile__avatar">
+   
     <div class="profile__info">
-      <h1 class="profile__title">Злата Чумак</h1>
+       <div class="profile__name-block">
+        <h1 class="profile__title">Злата Чумак</h1>
+        <button class="profile__edit" aria-label="Редактировать"></button>
+        
+      </div>
       <p class="profile__subtitle">Исследователь</p>
-      <button class="profile__edit" aria-label="Редактировать">
-        <img src="icons/Edit_Button.svg" alt="edit button" srcset="">
-      </button>
-    </div>
-    <button class="profile__add">
-        <img src="icons/Add_Button.svg" alt="profile__add__button">
-    </button>
+     </div>
+
+      <button class="profile__add">
+        <img src="icons/+.svg" alt="добавить"</button>
   </section>
 
   <!-- галерея -->
   <section class="gallery">
     <article class="card">
-      <img src="images/south demerdzhi.jpg" alt="южная Демерджи" class="card__image">
+      <img src="images/south_demerdzhi.jpg" alt="южная Демерджи" class="card__image">
       <div class="card__content">
         <h2 class="card__title">ю. Демерджи</h2>
         <button class="card__like"></button>
@@ -47,7 +49,7 @@
       </div>
     </article>
     <article class="card">
-      <img src="images/sunny glade.JPG" alt="солнечная поляна" class="card__image">
+      <img src="images/sunny_glade.JPG" alt="солнечная поляна" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Солнечное</h2>
         <button class="card__like"></button>
@@ -68,7 +70,7 @@
       </div>
     </article>
     <article class="card">
-      <img src="images/blue lake.JPG" alt="Голубое озеро" class="card__image">
+      <img src="images/blue_lake.JPG" alt="Голубое озеро" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Голубое озеро</h2>
         <button class="card__like"></button>
@@ -76,8 +78,7 @@
     </article>
   </section>
 
-  <!-- кнопка редактировать (иконка) -->
-<button class="profile__edit"></button>
+
 
 
 <!-- модальное окно -->
@@ -106,12 +107,41 @@
 </div>
 
 
+<!-- модальное окно 2 -->
+ <div class="popup popup_type_add">
+  <div class="popup__content">
+    <button class="popup__close" type="button"></button>
+    <h2 class="popup__title">Новое место</h2>
+    <form class="popup__form">
+      <input
+        type="text"
+        name="name"
+        class="popup__input"
+        placeholder="Название"
+        required
+      />
+      <input
+        type="text"
+        name="job"
+        class="popup__input"
+        placeholder="Ссылка на картинку"
+        required
+      />
+      <button type="submit" class="popup__save">Сохранить</button>
+    </form>
+  </div>
+</div>
+
 
   <!-- футер -->
   <footer class="footer">
     <p>© 2025 Russia</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="javaScript/main.js"></script>
+  <script src="javaScript/card.js"></script>
+  <script src="javaScript/modal.js"></script>
+  <script src="javaScript/utils.js"></script>
+
 </body>
 </html>
