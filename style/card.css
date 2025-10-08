@@ -1,4 +1,11 @@
 /* Галерея */
+/*[08.10.2025 TODO №4]:
+Хорошоая практика: На ширине телефона (у тебя @media (max-width: 679px)),
+измени в контейнере .gallery grid-template-columns: 1fr (это означает: показывается 1 колонка, во всю ширину страницы)
+Убери ограничение по ширине у .card (чтобы он мог растянуться на всю ширину контейнера),
+и не забудь добавить отступы .gallery, такоже же размера как в .profile.
+И посмотри какая красивая и плавная верстка стала для мобильных устройств. Если будут вопросы - пиши.
+*/
 .gallery {
   width: 100%;
   max-width: 880px;
@@ -6,9 +13,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 282px);
   gap: 20px 17px;
+  box-sizing: border-box;
   justify-content: center;
 }
-
 
 .card {
   width: 282px;
@@ -66,4 +73,3 @@
   background: url("../icons/like_active.svg") no-repeat center;
   background-size: contain;
 }
-
