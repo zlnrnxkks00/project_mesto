@@ -11,10 +11,11 @@
   max-width: 880px;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 282px);
+  grid-template-columns: repeat(3, 282px);
   gap: 20px 17px;
   box-sizing: border-box;
   justify-content: center;
+  padding: 0 16px;
 }
 
 .card {
@@ -26,6 +27,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 /* картинка */
@@ -61,6 +63,7 @@
   background: url("../icons/like.svg") no-repeat center;
   background-size: contain;
   border: none;
+  background-color: transparent;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -72,4 +75,18 @@
 .card__like_active {
   background: url("../icons/like_active.svg") no-repeat center;
   background-size: contain;
+}
+
+@media (max-width: 879px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 679px) {
+  .gallery {
+    grid-template-columns: repeat(1, 282px);
+    justify-content: center;
+  }
 }

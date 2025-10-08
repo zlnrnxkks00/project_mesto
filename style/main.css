@@ -32,14 +32,19 @@ body {
   align-items: center;
 }
 
-/*[08.10.2025 TODO №1]: никогда не используем отрицательные значения для margin и padding, из за этого
-некорректно отображается логотип на ширине телефона*/
 .logo {
   width: 142px;
   height: auto;
   display: block;
-  margin-top: -50px;
-  margin-left: -15px;
+  object-fit: contain;
+  margin: 0;
+  transform: translateY(-6px);
+}
+
+@media (max-width: 679px) {
+  .header {
+    padding-left: 27px;
+  }
 }
 
 .footer {
@@ -48,4 +53,5 @@ body {
   padding: 0 16px;
   font-size: 14px;
   color: #888;
+  text-align: left;
 }
