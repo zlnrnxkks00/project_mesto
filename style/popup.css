@@ -96,4 +96,48 @@
   background-color: #333;
 }
 
+@media (max-width: 679px) {
+  .popup__content {
+    width: 282px;
+    height: 322px;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 25px 22px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .popup__title {
+    font-size: 18px;
+    margin-bottom: 70px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .popup__input {
+    width: 238px;
+    height: 27px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .popup__save {
+    width: 238px;
+    height: 46px;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+  
+  .popup__close {
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    right: 0px;
+  }
+}
 
