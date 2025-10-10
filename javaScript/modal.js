@@ -2,7 +2,7 @@ const editButton = document.querySelector('.profile__edit');
 const popup = document.querySelector('.popup_type_edit');
 const closeButton = document.querySelector('.popup__close');
 const form = document.querySelector('.popup__form');
-const nameInput = form.querySelector('input[name="name"]');
+const nameInput = form.querySelector('input[name="name__person"]');
 const jobInput = form.querySelector('input[name="job"]');
 const profileTitle = document.querySelector('.profile__title');
 const profileSubtitle = document.querySelector('.profile__subtitle');
@@ -29,3 +29,4 @@ form.addEventListener('submit', (e) => {
   popup.classList.remove('popup_opened');
 });
 
+console.log(popup)
