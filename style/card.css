@@ -96,3 +96,35 @@
     width: 100%;
   }
 }
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card__delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: url(../icons/rubbish_bin.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+.card:hover .card__delete {
+  opacity: 0.7;
+
+}
+
+@media (max-width: 679px) {
+ .card__delete {
+  opacity: 1;
+ }
+}

@@ -12,9 +12,6 @@
   <img src="icons/logo.svg" alt="Логотип Mesto" class="logo">
 </header>
 
-
-  <!-- ПРИВЕТ ЗЛАТА -->
-
   <!-- профиль -->
   <section class="profile">
     <img src="images/zlata avatar 1.png" alt="Аватар" class="profile__avatar">
@@ -36,6 +33,7 @@
   <!-- галерея -->
   <section class="gallery">
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/south_demerdzhi.jpg" alt="южная Демерджи" class="card__image">
       <div class="card__content">
         <h2 class="card__title">ю. Демерджи</h2>
@@ -43,6 +41,7 @@
       </div>
     </article>
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/yalta.jpg" alt="Ялта" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Ялта</h2>
@@ -50,6 +49,7 @@
       </div>
     </article>
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/sunny_glade.JPG" alt="солнечная поляна" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Солнечное</h2>
@@ -57,6 +57,7 @@
       </div>
     </article>
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/dobroe.JPG" alt="доброе" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Доброе</h2>
@@ -64,6 +65,7 @@
       </div>
     </article>
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/bakhchisarai.JPG" alt="Бахчисарай" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Бахчисарай</h2>
@@ -71,6 +73,7 @@
       </div>
     </article>
     <article class="card">
+      <button class="card__delete" type="button" aria-label="удалить карточку"></button>
       <img src="images/blue_lake.JPG" alt="Голубое озеро" class="card__image">
       <div class="card__content">
         <h2 class="card__title">Голубое озероооооооооо</h2>
@@ -82,7 +85,7 @@
 
 
 
-<!-- модальное окно -->
+<!-- модальное окно Редактировать профиль -->
 <div class="popup popup_type_edit">
   <div class="popup__content">
       <!-- [08.10.2025 TODO №3]: Кнопка должна менять свое положение для размера экрана мобильный устройств-->
@@ -109,7 +112,7 @@
 </div>
 
 
-<!-- модальное окно 2 -->
+<!-- модальное окно 2 добавить карточку -->
  <div class="popup popup_type_add">
   <div class="popup__content">
     <button class="popup__close" type="button"></button>

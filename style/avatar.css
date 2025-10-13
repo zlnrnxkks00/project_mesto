@@ -129,4 +129,10 @@
      max-width: 282px;
   }
 
+  .profile__add-button {
+    width: 100%;
+    max-width: 400px;
+    
+  }
+
 }
