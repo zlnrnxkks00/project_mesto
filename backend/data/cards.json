@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1760949796706",
+    "name": "Доброе",
+    "link": "images/dobroe.jpg",
+    "liked": false
+  },
+  {
+    "id": "1760949816764",
+    "name": "Солнечное",
+    "link": "images/sunny_glade.jpg",
+    "liked": true
+  }
+]
