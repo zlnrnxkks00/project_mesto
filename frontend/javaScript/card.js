@@ -6,4 +6,3 @@ likeButtons.forEach(button => {
     button.classList.toggle('card__like_active');
   });
 });
-
