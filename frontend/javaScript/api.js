@@ -43,7 +43,7 @@ export async function deleteCard(id) {
 
 export async function toggleLike(id, isLiked) {
   const response = await fetch(`${BACKEND_URL}/cards/${id}/likes`, {
-    method: isLiked ? "PUT" : "DELETE",
+    method: isLiked ? "DELETE" : "PUT",
     headers: AUTH_HEADER
   });
 

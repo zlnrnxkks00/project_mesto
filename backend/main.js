@@ -146,7 +146,6 @@ app.delete("/cards/:id/likes", async (req, res) => {
   res.json(card);
 });
 
-// === API профиля ===
 
 // GET /profile
 app.get("/profile", async (req, res) => {
